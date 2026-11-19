@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tu casa, tu lugar · FIKA HOME</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--g:#3F5137;--gl:#BFDBA0;--rp:#F1DCE5;--sa:#EDD0C8;--ink:#23291F;--mut:#5F6B5A;--gt:#F3F7EE;--line:#D9DFD3}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.55;font-size:16px}
+h1,h2,h3{font-family:Montserrat,sans-serif;margin:0;line-height:1.1}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.note{background:var(--gt);color:var(--g);font-size:12.5px;text-align:center;padding:8px 16px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+header img{height:56px;width:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:14px 28px;border-radius:999px;background:var(--g);color:#fff;text-decoration:none;font-family:Montserrat,sans-serif;font-weight:600;font-size:15px;border:0;cursor:pointer}
+.btn:hover{background:#2f3d29}
+.btn.light{background:#fff;color:var(--g)}
+.link{font-family:Montserrat,sans-serif;font-weight:600;font-size:14px;color:var(--g);text-decoration:none}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:24px 0 64px}
+.tag{display:inline-block;background:var(--gl);color:var(--ink);font-family:Montserrat,sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;padding:6px 14px;border-radius:999px}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);color:var(--g);margin:18px 0}
+.hero p{font-size:1.2rem;max-width:30rem;margin:0 0 28px}
+.hero .ph{border-radius:28px;overflow:hidden;aspect-ratio:4/5}
+.hero .ph img{width:100%;height:100%;object-fit:cover}
+.pick{background:var(--gt);padding:72px 0}
+.pick h2,.route h2,.tips h2,.close h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
+.sub{font-size:1.1rem;margin:10px 0 32px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;text-decoration:none;transition:transform .15s}
+.card:hover{transform:translateY(-3px)}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card div{padding:20px 22px 24px}
+.card h3{font-size:1.4rem;color:var(--g);margin-bottom:6px}
+.card span{display:block;margin-top:12px;font-weight:600;color:var(--g)}
+.route{padding:72px 0;border-bottom:1px solid var(--line)}
+.kick{font-family:Montserrat,sans-serif;font-weight:600;font-size:13px;letter-spacing:2px;color:var(--g)}
+.route h2{margin:8px 0 10px}
+.route .sub{max-width:38rem}
+.prods{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.prod{border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column}
+.prod img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.prod div{padding:18px 20px 22px;display:flex;flex-direction:column;gap:14px;flex:1}
+.prod h3{font-size:1.05rem;font-weight:600}
+.prod .btn{align-self:flex-start;margin-top:auto;min-height:44px;padding:11px 22px;font-size:14px}
+.tips{background:var(--g);color:#fff;padding:72px 0}
+.tips h2{color:#fff;margin-bottom:28px}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tip{background:#4B5F42;border-radius:22px;padding:26px}
+.tip h3{font-size:1.15rem;color:var(--gl);margin-bottom:10px}
+.trust{padding:56px 0}
+.tr{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.tr div{background:var(--gt);border-radius:18px;padding:22px;font-weight:600}
+.tr div small{display:block;font-weight:400;color:var(--mut);margin-top:4px}
+.close{background:var(--rp);padding:80px 0;text-align:center}
+.close h2{color:var(--g);max-width:48rem;margin:0 auto 14px}
+.close p{font-size:1.1rem;margin:0 0 26px}
+footer{padding:28px 0;font-size:13px;color:var(--mut);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:860px){
+ .hero{grid-template-columns:1fr;gap:28px;padding-top:8px}
+ .hero .ph{aspect-ratio:4/3;order:-1}
+ .cards,.prods,.tgrid{grid-template-columns:1fr}
+ .tr{grid-template-columns:1fr 1fr}
+ header img{height:46px}
+}
+@media (max-width:480px){.tr{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="note">Proyecto académico de Diseño Gráfico · Propuesta de campaña «Tu casa, tu lugar» para FIKA HOME · No es el sitio oficial de la marca</div>
+
+<div class="wrap">
+<header>
+<img src="img/logo.png" alt="FIKA HOME">
+<a class="link" href="#elegi">Elegí por dónde empezar ↓</a>
+</header>
+
+<section class="hero">
+<div>
+<span class="tag">#TUCASATULUGAR</span>
+<h1>Tu casa, tu lugar.</h1>
+<p>No hace falta cambiarlo todo para que se sienta tuya. Elegí qué le falta a tu espacio y te mostramos por dónde empezar.</p>
+<a class="btn" href="#elegi">Elegí por dónde empezar</a>
+</div>
+<div class="ph"><img src="img/almendra_beige.jpg" alt="Living luminoso con cortinas de gasa"></div>
+</section>
+</div>
+
+<section class="pick" id="elegi">
+<div class="wrap">
+<h2>¿Qué le falta a tu espacio?</h2>
+<p class="sub">Elegí una opción y te llevamos a las ideas y productos para eso.</p>
+<div class="cards">
+<a class="card" href="#luz"><img src="img/almendra_offwhite.jpg" alt="Dormitorio con cortinas de gasa"><div><h3>Más luz</h3>Cortinas que filtran y luces cálidas para cada rincón.<span>Ver ideas →</span></div></a>
+<a class="card" href="#confort"><img src="img/fran_natural.jpg" alt="Cama con cubrecama natural"><div><h3>Más confort</h3>Textiles que cambian la sensación sin cambiar los muebles.<span>Ver ideas →</span></div></a>
+<a class="card" href="#personalidad"><img src="img/grecia_agua.jpg" alt="Cama con cubrecama color agua"><div><h3>Más personalidad</h3>Color y detalles que hablan de vos.<span>Ver ideas →</span></div></a>
+</div>
+</div>
+</section>
+
+<div class="wrap">
+<section class="route" id="luz">
+<span class="kick">MÁS LUZ</span>
+<h2>Luz que acompaña cada momento</h2>
+<p class="sub">De día, cortinas de gasa que filtran el sol sin oscurecer. De noche, una luz cálida y baja para leer o descansar.</p>
+<div class="prods">
+<div class="prod"><img src="img/almendra_offwhite.jpg" alt="Cortina Almendra off white"><div><h3>Cortina Almendra 2 paños Off White</h3><a class="btn" href="https://www.homefika.com.ar/productos/cortina-almendra-2-panos-off-white-150-x-220-cm-je4lw/">Ver producto</a></div></div>
+<div class="prod"><img src="img/velador_madrid.jpg" alt="Velador Madrid LED negro"><div><h3>Velador Madrid LED 3 tonos</h3><a class="btn" href="https://www.homefika.com.ar/productos/lampara-madrid-led-3-tonos-vkerg/">Ver producto</a></div></div>
+<div class="prod"><img src="img/vela_cilindro.jpg" alt="Velas LED cilindro"><div><h3>Vela LED cilindro</h3><a class="btn" href="https://www.homefika.com.ar/productos/vela-led-cilindro-15-cm-xutpx/">Ver producto</a></div></div>
+</div>
+</section>
+
+<section class="route" id="confort">
+<span class="kick">MÁS CONFORT</span>
+<h2>Textiles que cambian la sensación</h2>
+<p class="sub">Un cubrecama nuevo o almohadones a mano transforman la cama sin tocar un mueble. Livianos para el calor, a mano para las tardes de lluvia.</p>
+<div class="prods">
+<div class="prod"><img src="img/fran_natural.jpg" alt="Cubrecama Fran natural"><div><h3>Cubrecama Fran Natural</h3><a class="btn" href="https://www.homefika.com.ar/productos/cubrecama-fran-king-natural-rwh08/">Ver producto</a></div></div>
+<div class="prod"><img src="img/reversible_natural.jpg" alt="Kit cubrecama reversible natural"><div><h3>Kit Cubrecama Reversible Natural</h3><a class="btn" href="https://www.homefika.com.ar/productos/kit-cubrecama-reversible-king-natural-con-fundas-84b8x/">Ver producto</a></div></div>
+<div class="prod"><img src="img/blackout_beige.jpg" alt="Cortinas black out beige"><div><h3>Cortinas Black Out Beige</h3><a class="btn" href="https://www.homefika.com.ar/productos/cortinas-black-out-beige-220/">Ver producto</a></div></div>
+</div>
+</section>
+
+<section class="route" id="personalidad">
+<span class="kick">MÁS PERSONALIDAD</span>
+<h2>Color que habla de vos</h2>
+<p class="sub">Un color en la cama o un velador distinto alcanzan para que el espacio tenga tu sello.</p>
+<div class="prods">
+<div class="prod"><img src="img/grecia_agua.jpg" alt="Kit cubrecama Grecia agua"><div><h3>Kit Cubrecama Grecia Agua</h3><a class="btn" href="https://www.homefika.com.ar/productos/kit-cubrecama-grecia-king-agua-sg77d/">Ver producto</a></div></div>
+<div class="prod"><img src="img/fran_merlot.jpg" alt="Cubrecama Fran merlot"><div><h3>Cubrecama Fran Merlot</h3><a class="btn" href="https://www.homefika.com.ar/productos/cubrecama-fran-king-merlot-1s25e/">Ver producto</a></div></div>
+<div class="prod"><img src="img/velador_fibra.jpg" alt="Velador de fibra y metal"><div><h3>Velador Fibra y Metal</h3><a class="btn" href="https://www.homefika.com.ar/productos/velador-fibra-y-metal-a-pila-1l190/">Ver producto</a></div></div>
+</div>
+</section>
+</div>
+
+<section class="tips" id="consejos">
+<div class="wrap">
+<h2>Antes de comprar, mirá esto</h2>
+<div class="tgrid">
+<div class="tip"><h3>¿Cómo medir una cortina?</h3>Medí el ancho de la ventana y sumá un poco a cada lado. La altura se toma desde donde va a colgar, y el largo depende de si querés que roce el piso.</div>
+<div class="tip"><h3>¿Qué luz va en el dormitorio?</h3>De noche, una luz cálida y baja. La luz de techo blanca sirve para ordenar, no para descansar.</div>
+<div class="tip"><h3>¿Cómo cambiar sin cambiar muebles?</h3>Empezá por los textiles y la luz: son los cambios que más se notan y los más fáciles de hacer.</div>
+</div>
+</div>
+</section>
+
+<div class="wrap">
+<section class="trust">
+<div class="tr">
+<div>30% OFF<small>pagando con transferencia</small></div>
+<div>12 cuotas<small>sin interés</small></div>
+<div>Envío gratis<small>a domicilio desde $150.000</small></div>
+<div>¿Dudas con las medidas?<small>WhatsApp 221 680 3300</small></div>
+</div>
+</section>
+</div>
+
+<section class="close">
+<div class="wrap">
+<h2>Tu casa no tiene que parecerse a ninguna otra.</h2>
+<p>Encontrá los detalles que hacen que la tuya se sienta tuya.</p>
+<a class="btn" href="#elegi">Encontrá tu próximo cambio</a>
+</div>
+</section>
+
+<div class="wrap">
+<footer>
+<span>FIKA HOME · homefika.com.ar · @homefika</span>
+<span>Propuesta académica · Marketing Digital 2026</span>
+</footer>
+</div>
+</body>
+</html>
